@@ -9,7 +9,7 @@
 
 <div
 	class={clsx([
-		'flex aspect-square items-center justify-center rounded border-4 text-4xl font-bold text-white',
+		'flex aspect-square h-16 w-16 items-center justify-center rounded border-4 text-4xl font-bold text-white',
 		state === 'pending' && 'border-none bg-gray-500',
 		state === 'selected' && 'border-b-8',
 		state === 'otherPosition' && 'bg-yellow-500',
