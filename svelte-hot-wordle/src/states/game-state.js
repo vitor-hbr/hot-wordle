@@ -5,10 +5,33 @@ import { validateAttempt } from '../api/word.service';
  */
 const initialGameState = 'playing';
 
+const NUMBER_OF_LETTERS = 5
+const NUMBER_OF_ATTEMPTS = 6
+
+const createInitialAttemptedWords = () => {
+	/** @type {AttemptedWord[]} */
+	const attemptedWords = []
+
+	for(let wordIndex = 0;  wordIndex < NUMBER_OF_ATTEMPTS; wordIndex++ ) {
+		attemptedWords.push([])
+		
+		for(let letterIndex = 0; letterIndex < NUMBER_OF_LETTERS; letterIndex++) {
+			attemptedWords[wordIndex].push({
+				letter: ' ',
+				state: 'pending'
+			});
+		}
+	}
+
+	return attemptedWords
+}
+
+
+
 /**
  * @type {AttemptedWord[]}
  */
-const initialAttemptedWords = [];
+const initialAttemptedWords = createInitialAttemptedWords()
 
 export const gameState = writable(initialGameState);
 
