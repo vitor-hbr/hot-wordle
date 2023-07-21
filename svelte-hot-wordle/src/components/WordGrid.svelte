@@ -34,7 +34,7 @@
 <svelte:window on:keydown|preventDefault={handleKeyPress} />
 
 <!-- Quanto termina a palavra e da enter => makeAttempt -->
-<div bind:this={rootElement} class={`grid-cols-letters grid grid-flow-row gap-1`}>
+<div bind:this={rootElement} class={`grid-cols-letters mb-4 grid grid-flow-row gap-1`}>
 	{#each attemptedWords as word}
 		{#each word as { letter, state }}
 			<GridLetter {letter} {state} />
