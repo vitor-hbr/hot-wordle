@@ -4,5 +4,8 @@
 
 html, body {
   @apply h-full bg-outsmart-purple;
+}
 
+body {
+  @apply flex flex-col items-center justify-center;
 }
