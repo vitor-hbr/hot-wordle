@@ -13,5 +13,5 @@
 	class={`col-span-2 flex h-9 w-11 items-center justify-center rounded bg-white ${classes} cursor-pointer`}
 	on:click={handleClick}
 >
-	<p class="font-bold capitalize text-[#333399]">{name}</p>
+	<p class="text-outsmart-purple font-bold capitalize">{name}</p>
 </div>
