@@ -3,7 +3,7 @@
 
 	/** @type {string} */
 	export let letter;
-	/** @type {'pending' | 'selected' | 'correct' | 'otherPosition'} */
+	/** @type {LetterState} */
 	export let state = 'pending';
 </script>
 
